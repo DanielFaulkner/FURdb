@@ -5,7 +5,7 @@ Supported annotation file formats are: BED, GTF/GFF, DFAM and UCSC Table browser
 
 The 'doc' folder contains documentation on the use of FURdb.  
 
-**NOTE:** While care has been made to remove errors the outputs of these utilities come with no guarantee of accuracy. Please check the outputs of FURdb are accurate and suitable before using in research or production settings.
+**NOTE:** While care has been made to remove errors the outputs of these utilities come with no guarantee of accuracy. Please check the outputs of FURdb are accurate and suitable before using in research or production settings. Please note the RPKM values generated do NOT account for some of the available options, and therefore should not be relied upon. Additionally the GUI is a work in progress, and the current prototype requires pyQT5 to run.  
 
 ## Requirements
 - Python, version 3
