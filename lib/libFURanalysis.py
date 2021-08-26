@@ -233,6 +233,8 @@ class analysis(libFURdatabase.furdbobj):
             annoinfodict[id]=[repName, chrName, alignStart, alignEnd, strand, score, matchStart, matchEnd]
         return annoinfodict
     # Get the required information for normalisation of each annotation:
+    ### WARNING: This doesn't reflect any additional filtering settings which may have been used.
+    ### E.G. Equal lengths both sides, or fixed length, or minimum contig length which is different from the database.
     def getRegionSizes(self):
         """Calculate the number of bases and contigs each annotation has, per end."""
         regionSenseSize = {}

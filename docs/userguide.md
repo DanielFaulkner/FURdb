@@ -123,6 +123,9 @@ bowtie2-build output.fa Contigs
 bowtie2 -x Contigs -U RNAtranscriptome.fastq -S RNAalignment.sam  
 python FURanalyse.py reportall -i RNAalignment.sam -o expressionreport.tsv  
 
+**WARNING:**  
+The report returns the RPKM score of each result. This value assumes that the entire, deduplicated, flanking regions were used when looking for matches. Using options to set a fixed or equal flanking region size are NOT reflected in the RPKM score at this time. Until these changes are reflected in the RPKM score it is recommended not to use the RPKM value as an indicator in these situations.  
+
 
 ## FURdb inspection (FURinspect.py)
 
